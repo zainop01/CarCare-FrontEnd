@@ -1,0 +1,21 @@
+@use "../common" as *;
+@use "../helper" as *;
+
+
+.search-input{
+    input {
+        background-color: white;
+        font-size: 1.4rem;
+        width: 30rem;
+        height: 2rem;
+        border: 1px solid rgb(209, 209, 209);
+        box-shadow: $box-shadow;
+        outline: none;
+        padding: 2rem;
+        border-radius: 0.5rem;
+  
+        &::placeholder {
+          font-size: 1.4rem;
+        }
+      }
+}

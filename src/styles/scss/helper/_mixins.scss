@@ -1,0 +1,114 @@
+// Color-Classes-Generator
+@mixin colorGenerator($color) {
+    .c-#{str-slice(#{$color},
+    2,
+    -1)
+}
+
+    {
+    color: $color !important;
+}
+}
+
+// BG-Color-Classes-Generator
+@mixin bgColorGenerator($color) {
+    .bg-#{str-slice(#{$color},
+    2,
+    -1)
+}
+
+    {
+    background-color: $color;
+}
+}
+
+// Size-mixin
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+    @content;
+}
+// button-mixins
+@mixin btn($color , $bg , $bd , $bd-radius , $p , $m , $f-size , $f-weight) {
+    color: $color;
+    background: $bg;
+    border: $bd;
+    border-radius: $bd-radius;
+    padding: $p ;
+    margin: $m;
+    font-size: $f-size ;
+    font-weight: $f-weight;
+}
+
+// Button mixin
+@mixin button($width,
+    $height,
+    $b-radius,
+    $b-color,
+    $color,
+    $fontsize,
+    $fontweight,
+    $padding ) {
+    width: $width;
+    height: $height;
+    border-radius: $b-radius;
+    background-color: $b-color;
+    color: $color;
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    padding: 0px $padding;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @content;
+}
+
+// Button mixin
+@mixin btnSize($width, $height, $padding) {
+    width: $width;
+    height: $height;
+    padding: 0px $padding;
+    @content;
+}
+
+// Font-Styling
+@mixin fontstyle($fontSize, $fontWeight, $color) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+    @content;
+}
+
+// hover mixin
+@mixin hover($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+    @content;
+}
+
+// Background-Images
+@mixin bgImage($url, $bgSize, $repeat, $position) {
+    background-image: url($url);
+    background-size: $bgSize;
+    background-repeat: $repeat;
+    background-position: $position;
+    @content;
+}
+
+// Input-Fields
+@mixin input($width,
+    $height,
+    $round,
+    $bg,
+    $color,
+    $padding,
+    $fontSize,
+    $fontWeight ) {
+    @include size($width, $height);
+    @include fontstyle($fontSize, $fontWeight, $color);
+    @extend %borderOutline;
+    border-radius: $round;
+    background: $bg;
+    padding: $padding;
+    @content;
+}

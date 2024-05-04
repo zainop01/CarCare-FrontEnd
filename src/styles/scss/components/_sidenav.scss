@@ -1,0 +1,48 @@
+@use "../common" as *;
+@use "../helper" as *;
+
+.sidenav-wrapper{
+    background-color: white;
+    height: 100vh;
+    position: relative;
+.top-section{
+    margin-bottom: 4rem;
+}
+span{
+    color: $primary-color;
+}
+.sidebar{
+    position: fixed;
+    width: 25rem;
+    background: $white;
+    // box-shadow: 3px 4px 21px -8px rgba(225, 225, 225, 0.15);
+    height: 100%;
+    // transition: all 0.5s;
+    // @include px-670{
+    //     height: 107rem;
+    // }
+    // @include px-468{
+    //     height: 225rem;
+    // }
+}
+.bars{
+    // margin-left: 10rem;
+    cursor: pointer;
+    // transition: all 0.5s;
+    margin-left: 12rem;
+}
+.links{
+    color: $black-505;
+    list-style: none;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+}
+.icon , .link-text{
+    font-size:1.4rem;
+}
+.active{
+    color: $primary-color;
+    background-color: $gray-f6f;
+    border-left: 5px solid $primary-color;
+}
+}

@@ -1,0 +1,57 @@
+@use "../common" as *;
+
+
+h1 {
+    font-size: $font-size-xl;
+    font-weight: $display1-weight;
+    line-height: $line-height-base;
+}
+
+h2 {
+    font-size: $font-size-lg;
+    font-weight: $display1-weight;
+}
+
+h3 {
+    font-size: $display1-size;
+}
+
+h4 {
+    font-size: $display2-size;
+}
+
+h5 {
+    font-size: $display3-size;
+}
+
+h6 {
+    font-size: $display4-size;
+}
+
+p {
+    font-size: $font-size-base;
+}
+
+label {
+    font-size: $font-size-sm;
+}
+
+
+// Font-Sizes-in-Rem-Classess
+@each $size in $fonts-rem {
+    .f-#{str-slice(#{$size},
+    0,
+    1)+str-slice(#{$size}, -1)
+}
+
+-rem {
+    font-size: #{$size}+"rem";
+}
+}
+
+// Font-Sizes-in-PeXel-Classess
+@each $size in $font-px {
+    .f-#{$size}-px {
+        font-size: #{$size}+"px";
+    }
+}

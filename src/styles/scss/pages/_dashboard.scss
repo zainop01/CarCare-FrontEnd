@@ -1,0 +1,133 @@
+@use "../common" as *;
+@use "../helper" as *;
+span{
+    color: $primary-color;
+}
+.main-container{
+  margin-left: 25rem;
+}
+#cardone-container {
+    box-shadow: 3px 3px 115px 0px rgba(166, 166, 166, 0.15);
+    width: 24%;
+    border-radius: 1rem;
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    position: relative;
+    // @include px-670{
+    //   width: 49%;
+    // }
+    // @include px-468{
+    //   width: 100%;
+    // }
+    .vector-img img {
+      position: absolute;
+      right: 8%;
+      bottom: 18%;
+      width: 4.2rem;
+    }
+    .number{
+      font-size: 2rem;
+      font-weight: 800;
+    }
+  }
+  .primary-card {
+    background-color: $primary-color;
+    color: #fff;
+    .icon-div {
+      .user-icon {
+        color: $primary-color;
+        background-color: white;
+        border-radius: 0.7rem;
+        font-size: 4rem;
+        padding: 1rem;
+      }
+    }
+  }
+  .orange-card {
+    background: rgb(255, 164, 81);
+    background: linear-gradient(
+      212deg,
+      rgba(255, 164, 81, 1) 0%,
+      rgba(255, 255, 255, 1) 46%
+    );
+    color: $black-505;
+    .icon-div{
+      .vehicle-icon {
+          color: #ff8d22 ;
+          background: #FFE8D3;
+          border-radius: 0.7rem;
+          font-size: 4rem;
+          padding: 1rem;
+        }
+    }
+  }
+  .blue-card {
+    background: rgb(81, 140, 255);
+    background: linear-gradient(
+      212deg,
+      rgba(81, 140, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 46%
+    );
+    color: $black-505;
+    .icon-div{
+      .bell-icon {
+          color:#1966ff  ;
+          background: #D8ECFF;
+          border-radius: 0.7rem;
+          font-size: 4rem;
+          padding: 1rem;
+        }
+    }
+  }
+  .green-card {
+    background: rgb(118, 255, 132);
+    background: linear-gradient(
+      212deg,
+      rgba(118, 255, 132, 1) 0%,
+      rgba(255, 255, 255, 1) 46%
+    );
+    color: $black-505;
+    .icon-div{
+      .sale-icon {
+          color: #00a511 ;
+          background: #C6FFCC;
+          border-radius: 0.7rem;
+          font-size: 4rem;
+          padding: 1rem;
+        }
+    }
+  }
+  
+  
+  .cardtwo-wrapper{
+    position: relative;
+    box-shadow: 3px 3px 115px 0px rgba(166, 166, 166, 0.15);
+    width: 24%;
+    border-radius: 1rem;
+    padding: 1.6rem 1.6rem .2rem 1.6rem;
+    font-size: 1.4rem;
+    background-color: white;
+    // @include px-670{
+    //   width: 49%;
+    // }
+    // @include px-468{
+    //   width: 100%;
+    // }
+    .count{
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    .title{
+        font-size: 1.4rem;
+    }
+    // .card-img img {
+    //   width: 70%;
+  
+    // }
+    .cardtwo-icon{
+      background: #CAE6FF;
+      border-radius: 0.7rem;
+      font-size: 4rem;
+      padding: 1rem;
+    }
+  }

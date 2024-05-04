@@ -1,0 +1,43 @@
+@use "../common" as *;
+@use "../helper" as *;
+
+.table-container {
+    overflow: auto;
+    filter: drop-shadow(-4px 11px 20px rgba(0, 0, 0, 0.1));
+    table {
+      width: 100%;
+    //   min-width: 800px;
+      background-color: $white;
+      thead {
+        tr {
+          background-color: $blue-93d;
+          height: 40px;
+        }
+      }
+      th,
+      td {
+        text-align: center;
+        padding: 8px 5px;
+        @include fontstyle(13px, 700, $black-505);
+      }
+      tbody {
+        tr {
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+          i {
+            font-size: 16px;
+          }
+        }
+        tr:nth-child(odd) {
+          background: $white;
+        }
+        tr:nth-child(even) {
+          background: #f1faff;
+        }
+        td {
+          @include fontstyle(13px, 700, $black-505);
+          padding: 5px 2px;
+        }
+      }
+    }
+  }
+  

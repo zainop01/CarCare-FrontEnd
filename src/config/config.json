@@ -1,0 +1,104 @@
+{
+    "apiUrl": "http://localhost:8000",
+    "customerActiveTableHeadings" : [
+ 
+       "#",
+       "Name",
+       "Vehicle No",
+       "Order",
+       "No Of Vehicle",
+       "Vehicle Brand",
+       "Created At",
+       "Location",   
+       "Phone",
+       "Status",
+       "Action"
+    
+    ] , 
+    "reminderTableHeadings" : [
+ 
+       "#",
+       "Customer Name",
+       "Phone",
+       "Vehicle",
+       "No Of Reminds",
+       "Last Remind",
+       "Created At",
+       "Action"
+    
+    ], 
+    "vehicleTableHeadings" : [
+ 
+       "#",
+       "Vehicle No",
+       "Vehicle Brand",
+       "Vehicle Model"
+    ], 
+    "expenseTableHeadings" : [
+ 
+       "#",
+       "Title",
+       "Amount",
+       "Description",
+       "Date & Time",
+       "Action"
+    ], 
+    "servicesTableHeadings" : [
+ 
+       "#",
+       "Name",
+       "Price",
+       "Description",
+       "Action"
+    ], 
+    "productStockTableHeadings" : [
+ 
+       "#",
+       "Product Name",
+       "Description",
+       "Quantity",
+       "Price",
+       "Sale Price",
+       "Sale",
+       "Date",
+       "Action"
+    ], 
+    "productSaleTableHeadings" : [
+ 
+       "#",
+       "Product Name",
+       "Description",
+       "Quantity",
+       "Buy Price",
+       "Sale Price",
+       "Discount",
+       "Profit",
+       "Avg Selling Price",
+       "Last Update",
+       "Action"
+    ], 
+    "producHistoryTableHeadings" : [
+ 
+       "#",
+       "Customer Name",
+       "Product Name",
+       "Description",
+       "Quantity",
+       "Sale Price",
+       "Discount",
+       "Total",
+       "Date",
+       "Action"
+    ], 
+    "createOrderProductTable" : [
+ 
+       "#",
+       "Product Name",
+       "Quantity",
+       "Sale Price",
+       "Discount",
+       "Total",
+       "Action"
+    ]
+ }
+ 

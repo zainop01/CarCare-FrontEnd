@@ -1,0 +1,58 @@
+@use "../common" as *;
+@use "../helper" as *;
+
+.customer-wrapper {
+    .filter-btn Button {
+      @include btn(
+        $primary-color,
+        transparent,
+        1px solid $primary-color,
+        0.5rem,
+        0.6rem 1.5rem,
+        1rem,
+        1.6rem,
+        500
+      );
+    }
+    .customer-add-btn Button {
+      @include btn(
+        $white,
+        $primary-color,
+        1px solid $primary-color,
+        0.5rem,
+        0.6rem 1.5rem,
+        1rem,
+        1.6rem,
+        500
+      );
+    }
+  }
+
+//   Tabs
+.tabs-container {
+    @extend %borderOutline;
+    .nav-tabs {
+      margin-bottom: 20px;
+    }
+    .nav-item {
+      margin-right: 5px;
+      @include size(auto, 50px);
+      .nav-link.active {
+        @include fontstyle(13px, 600, $white);
+        background: $primary-color;
+        border-radius: 5px 20px 0px 0px;
+      }
+      .nav-link {
+        background:   #ffd6e6;
+        @include size(100%, 100%);
+        border-radius: 5px 20px 0px 0px;
+        padding: 0px 20px;
+        @include fontstyle(13px, 600, black);
+        cursor: pointer;
+        &:hover {
+          @extend %borderOutline;
+        }
+      }
+    }
+  }
+  

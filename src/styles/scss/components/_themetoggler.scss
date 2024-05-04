@@ -1,0 +1,226 @@
+@use "../common" as *;
+@use "../helper" as *;
+
+
+.theme-toggler {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+  
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+  
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 34px;
+    }
+  
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+  
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+  
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+  
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+  
+    .slider.round {
+      border-radius: 34px;
+    }
+  
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  
+    .mode-label {
+      margin-left: 10px;
+    }
+  }
+  
+  .dark-mode {
+    // transition: all 0.5s;
+    background-color: #222;
+    color: #fff;
+    // Top Nav Theme
+    .topnav-wrapper{
+      transition: all 0.5s;
+      background-color: #131313;
+      color: #fff;
+      box-shadow: none;
+    }
+    // SideNav Theme
+    .sidebar{
+      transition: all 0.5s;
+      background-color: #131313;
+      color: #fff;
+      box-shadow: none;
+    }
+    .links{
+      transition: all 0.5s;
+    color: white;
+}
+.active{
+  transition: all 0.5s;
+  color: $primary-color;
+  background-color: #9fa2b438;
+}
+// Dashboard Theme
+.dashboard-content{
+  transition: all 0.5s;
+  background-color: #222222;
+}
+// #cardone-container{
+//   // box-shadow: 5px 3px 20px 0px rgba(0, 0, 0, 1);
+// }
+.orange-card {
+  transition: all 0.5s;
+  background: rgb(255, 191, 131);
+  background: linear-gradient(
+    212deg,
+    rgba(255, 164, 81, 1) 0%,
+    #131313 46%
+  );
+  color: white;
+}
+
+.blue-card {
+  transition: all 0.5s;
+  background: rgb(81, 140, 255);
+  background: linear-gradient(
+    212deg,
+    rgba(81, 140, 255, 1) 0%,
+    #131313 46%
+  );
+  color: white;
+}
+.green-card {
+  transition: all 0.5s;
+  background: rgb(118, 255, 132);
+  background: linear-gradient(
+    212deg,
+    rgba(118, 255, 132, 1) 0%,
+    #131313 46%
+  );
+  color: white;
+}
+.cardtwo-wrapper{
+  // transition: all 0.5s;
+  background-color: #131313;
+  .cardtwo-icon{
+    background: #adadad53;
+    border-radius: 0.7rem;
+    font-size: 4rem;
+    padding: 1rem;
+  }
+}
+// Table
+.table-container {
+
+  overflow: auto;
+  filter: drop-shadow(-4px 11px 20px rgba(0, 0, 0, 0.1));
+  table {
+
+    width: 100%;
+  //   min-width: 800px;
+    background-color: $white;
+    thead {
+      tr {
+        background-color: $blue-93d;
+      }
+    }
+    th,
+    td {
+      @include fontstyle(13px, 700, $black-505);
+    }
+    tbody {
+      tr:nth-child(odd) {
+        background: #131313;
+      }
+      tr:nth-child(even) {
+        background: #333;
+      }
+      td {
+        @include fontstyle(13px, 700, white);
+      }
+    }
+  }
+}
+
+// Search
+.search-input{
+  input {
+      background-color: #333;
+      font-size: 1.4rem;
+      width: 30rem;
+      height: 2rem;
+      border: 1px solid grey;
+      box-shadow: none;
+      outline: none;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      color: white;
+
+      &::placeholder {
+        font-size: 1.4rem;
+        color: white;
+      }
+    }
+}
+
+
+  }
+
+  
+  //  Outer Data
+  .topnav-wrapper{
+    background-color: #fff;
+  }
+  .dashboard-content{
+    background-color: #f6f6f6;
+  }
+  .sidebar{
+    box-shadow: 3px 4px 21px -8px rgba(225, 225, 225, 1);
+  }
+  .topnav-wrapper{
+    box-shadow: 3px 4px 21px -8px rgba(225, 225, 225, 1);
+  }
+  
+
+  

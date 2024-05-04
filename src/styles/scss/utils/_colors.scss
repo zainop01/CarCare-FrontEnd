@@ -1,0 +1,14 @@
+@use "../common" as *;
+@use "../helper" as *;
+
+
+
+// // Color-Generator
+// @each $color in $colors {
+//     @include colorGenerator($color);
+// }
+
+// // Background-Color-Generator
+// @each $color in $bgColors {
+//     @include bgColorGenerator($color);
+// }

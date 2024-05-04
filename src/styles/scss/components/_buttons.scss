@@ -1,0 +1,36 @@
+@use "../common" as *;
+@use "../helper" as *;
+
+
+// .btn_fill_primary {
+//     @include button(auto,
+//         $base-btn-height,
+//         $border-radius,
+//         $green-37a,
+//         $white,
+//         $font-size-sm,
+//         $display3-weight,
+//         10px);
+// }
+
+// .btn_outline_primary {
+//     @include button(auto,
+//         $base-btn-height,
+//         $border-radius,
+//         $green-37a,
+//         $white,
+//         $font-size-sm,
+//         $display3-weight,
+//         10px);
+// }
+
+// .btn_lg {
+//     @include btnSize(auto,
+//         $lg-btn-height,
+//         10px)
+// }
+// .btn_sm {
+//     @include btnSize(auto,
+//         $sm-btn-height,
+//         10px)
+// }

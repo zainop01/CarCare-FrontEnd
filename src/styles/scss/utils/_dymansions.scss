@@ -1,0 +1,26 @@
+// width-utilities-classess-1-to-100
+@for $i from 0 through 100 {
+    $width-value: $i * 5; 
+    .width-#{$width-value} {
+        width: #{$width-value}+"%";
+    }
+
+}
+
+
+// width-utilities-classess-1-to-200-in-px
+@for $i from 0 through 200 {
+    $width-value: $i * 5; 
+    .width-#{$width-value}-px {
+        width: #{$width-value}+"px";
+    }
+}
+
+
+// Height-utilities-classess-1-to-150-px
+@for $i from 0 through 200 {
+    $height-value: $i * 5; 
+    .height-#{$height-value} {
+        height: #{$height-value}+"px";
+    }
+}
